@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+.vite/
+
+# Environment — NEVER commit secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test scripts (debug only, not needed in repo)
+scripts/test_*.js
+scripts/debug_*.js
+scripts/check_tx.js
+scripts/parse_output.js
+scripts/deploy_python.py
