@@ -32,3 +32,9 @@ scripts/debug_*.js
 scripts/check_tx.js
 scripts/parse_output.js
 scripts/deploy_python.py
+
+# Design source files (UI mockups, prompts) — not part of the app
+Design/
+
+# main.jsx is the new entry point
+src/main.js

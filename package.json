@@ -10,7 +10,11 @@
     "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "buffer": "^6.0.3",
     "genlayer-js": "latest",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "rollup": "^4.60.3"
   },
   "devDependencies": {
