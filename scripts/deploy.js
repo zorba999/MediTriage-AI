@@ -16,9 +16,9 @@ function loadPrivateKey() {
     throw new Error(".env file not found. Copy .env.example to .env and add your private key.");
   }
   const envContent = readFileSync(envPath, "utf8");
-  const match = envContent.match(/VITE_PRIVATE_KEY=(0x[a-fA-F0-9]{64})/);
+  const match = envContent.match(/^PRIVATE_KEY=(0x[a-fA-F0-9]{64})/m);
   if (!match) {
-    throw new Error("VITE_PRIVATE_KEY not found in .env file.");
+    throw new Error("PRIVATE_KEY not found in .env file.");
   }
   return match[1];
 }
